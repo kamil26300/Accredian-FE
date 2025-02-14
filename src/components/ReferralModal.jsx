@@ -87,7 +87,7 @@ const ReferralModal = ({ open, handleClose }) => {
           <h2 className="text-2xl font-bold mb-6" id="referral-modal-title">
             Refer a Friend
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="gap-4 flex flex-col">
             <TextField
               fullWidth
               label="Your Name"

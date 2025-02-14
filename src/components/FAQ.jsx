@@ -17,8 +17,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="py-16">
-      <h2 className="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
+    <div className="py-16 flex flex-col items-center justify-center">
+      <h2 className="text-2xl font-bold text-center mb-8 flex gap-1">
+        What are the <p className="text-blue-600">Referral Benefits</p>?
+      </h2>
       {faqs.map((faq, index) => (
         <Accordion key={index}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>

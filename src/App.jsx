@@ -1,9 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import logo from "./assets/black-logo.png";
+import ContactExpert from "./components/ContactExpert";
+import Footer from "./components/Footer";
 
 const theme = createTheme({
   palette: {
@@ -77,39 +79,14 @@ function App() {
       <CssBaseline />
       <Router>
         <div className="min-h-screen bg-gray-50">
+          <ContactExpert />
           <Navbar />
           <main className="container mx-auto px-4 py-8">
             <Routes>
               <Route path="/" element={<Home />} />
             </Routes>
           </main>
-          <footer className="bg-[#333333] border-t mt-auto">
-            <div className="container mx-auto px-4 py-6">
-              <div className="flex flex-col md:flex-row justify-between items-center">
-                <div className="mb-4 md:mb-0">
-                  <img
-                    src={logo}
-                    alt="Accredian"
-                    className="h-12"
-                  />
-                </div>
-                <div className="flex gap-4">
-                  <a href="#" className="text-gray-200 hover:text-gray-300">
-                    Terms & Conditions
-                  </a>
-                  <a href="#" className="text-gray-200 hover:text-gray-300">
-                    Privacy Policy
-                  </a>
-                  <a href="#" className="text-gray-200 hover:text-gray-300">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-              <div className="text-center text-gray-200 text-sm mt-4">
-                © {new Date().getFullYear()} Accredian. All rights reserved.
-              </div>
-            </div>
-          </footer>
+          <Footer />
         </div>
       </Router>
     </ThemeProvider>
