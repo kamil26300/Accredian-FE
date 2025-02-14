@@ -113,7 +113,7 @@ const ReferralBenefits = ({ onClick }) => {
             <thead className="bg-blue-50">
               <tr>
                 {/* Responsive text sizes */}
-                <th className="px-3 w-2 lg:px-6 py-3 text-left text-xs lg:text-sm font-semibold text-gray-600">
+                <th className="px-3 lg:w-full w-2 lg:px-6 py-3 text-left text-xs lg:text-sm font-semibold text-gray-600">
                   Programs
                 </th>
                 <th className="px-3 text-nowrap lg:px-6 py-3 text-right text-xs lg:text-sm font-semibold text-gray-600">
@@ -132,7 +132,7 @@ const ReferralBenefits = ({ onClick }) => {
                     key={index}
                     className="border-b border-gray-100 hover:bg-gray-50"
                   >
-                    <td className="px-3 min-w-36 lg:px-6 py-3 lg:py-4 text-xs lg:text-sm text-gray-800">
+                    <td className="px-3 min-w-36 lg:min-w-full lg:px-6 py-3 lg:py-4 text-xs lg:text-sm text-gray-800">
                       <div className="flex items-center gap-2">
                         <span className="text-blue-600 hidden lg:inline">
                           🎓
